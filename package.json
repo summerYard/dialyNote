@@ -9,7 +9,7 @@
     "server": "hexo server",
     "sync": "yuque-hexo sync",
     "clean:yuque": "yuque-hexo clean",
-    "deploy": "npm run sync && hexo clean && hexo generator",
+    "deploy": "npm run sync && hexo clean && hexo generator"
   },
   "hexo": {
     "version": "5.3.0"
@@ -19,7 +19,7 @@
     "login": "feeiluuo",
     "repo": "blog",
     "mdNameFormat": "title",
-   "postPath": "source/_posts/yuque"
+    "postPath": "source/_posts/yuque"
   },
   "dependencies": {
     "hexo": "^5.0.0",
