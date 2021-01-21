@@ -26,9 +26,9 @@ deploy:
     skip_cleanup: true
     target_branch: master
     github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    repo: summerYard/summerYard.github.io.git
+    repo: summerYard/summerYard.github.io
     local_dir: public
-    
+
 # 部署
 #deploy:
 #provider: pages
