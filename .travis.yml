@@ -20,11 +20,18 @@ script:
 - hexo clean
 - hexo generate
 
+after_script:
+  - cd ./public
+  - git init
+  - git add .
+  - git commit -m "update"
+  - git push --force --quiet "https://github.com/summerYard/summerYard.github.io.git" master:master
+
 # 部署
-deploy:
-provider: pages
-skip-cleanup: true
-keep-history: true
-local-dir: public
-repo: summerYard/summerYard.github.io.git # 你的GitHub Page仓库地址
-target-branch: master
+#deploy:
+#provider: pages
+#skip-cleanup: true
+#keep-history: true
+#local-dir: public
+#repo: summerYard/summerYard.github.io.git # 你的GitHub Page仓库地址
+#target-branch: master
