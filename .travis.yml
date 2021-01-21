@@ -23,6 +23,8 @@ script:
 after_script:
   - cd ./public
   - git init
+  - git config user.name "summerYard"
+  - git config user.email "274948052@qq.com"
   - git add .
   - git commit -m "update"
   - git push --force --quiet "https://github.com/summerYard/summerYard.github.io.git" master:master
