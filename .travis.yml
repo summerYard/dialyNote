@@ -20,15 +20,15 @@ script:
 - hexo clean
 - hexo generate
 
-after_script:
-  - cd ./public
-  - git init
-  - git config user.name "summerYard"
-  - git config user.email "274948052@qq.com"
-  - git add .
-  - git commit -m "update"
-  - git push --force --quiet "https://github.com/summerYard/summerYard.github.io.git" master:master
-
+deploy:
+  # deploy to github pages
+  - provider: pages
+    skip_cleanup: true
+    target_branch: master
+    github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    repo: summerYard/summerYard.github.io.git
+    local_dir: public
+    
 # 部署
 #deploy:
 #provider: pages
