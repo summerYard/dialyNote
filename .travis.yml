@@ -17,8 +17,9 @@ install:
 
 # 执行的命令
 script:
-- hexo clean
-- hexo generate
+#- hexo clean
+#- hexo generate
+- npm run deploy
 
 deploy:
   # deploy to github pages
