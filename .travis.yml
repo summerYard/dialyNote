@@ -24,8 +24,7 @@ script:
 deploy:
 provider: pages
 skip-cleanup: true
-github-token: $GITHUB_TOKEN # Set in travis-ci.org dashboard, marked secure
 keep-history: true
 local-dir: public
-repo: https://github.com/summerYard/summerYard.github.io.git # 你的GitHub Page仓库地址
+repo: summerYard/summerYard.github.io.git # 你的GitHub Page仓库地址
 target-branch: master
