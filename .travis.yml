@@ -19,7 +19,7 @@ install:
 script:
 - hexo clean
 - hexo generate
-#- npm run deploy
+#- npm run deploy 添加语雀时用
 
 deploy:
   # deploy to github pages

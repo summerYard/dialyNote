@@ -6838,6 +6838,13 @@ html.has-navbar-fixed-bottom, body.has-navbar-fixed-bottom {
   padding-bottom: 3.25rem;
 }
 
+/*新增个样式*/
+.navbar-brand{
+  font-size: 1.6rem;
+  margin-right: 2rem;
+}
+/* end */
+
 .navbar-brand, .navbar-tabs {
   -webkit-box-align: stretch;
   align-items: stretch;
