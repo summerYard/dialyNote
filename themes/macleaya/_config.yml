@@ -1,0 +1,30 @@
+menu:
+  - name: home
+    url: /
+    newTab: false
+  - name: category
+    url: /category
+    newTab: true
+  - name: archive
+    url: /archive
+    newTab: true
+  - name: tag
+    url: /tags
+    newTab: true
+  #- name: about
+    #url: /about
+    #newTab: false
+
+widgets:
+  #- user-info
+  - latest
+  - category
+  - archive
+  - label
+
+favicon: /images/favicon.ico
+
+#UserInfo
+avatar: /images/header.jpg
+author: 不知道叫什么的空间……
+slogan: 记录一些东西

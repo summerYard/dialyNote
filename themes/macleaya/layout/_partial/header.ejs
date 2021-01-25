@@ -1,0 +1,19 @@
+<header class="header">
+    <div class="global-width">
+
+        <div class="avatar">
+            <img src="<%= theme.avatar %>" alt="head-sculpture" />
+            <span><%= theme.author %></span>
+        </div>
+
+        <nav class="nav-box">
+            <% theme.menu.forEach(function (item) {%>
+                <a class="nav-item" href="<%- item.url%>"
+                <% if (item.newTab) { %>
+                   target="_blank"
+                <% } %>
+                ><%= __(item.name) %></a>
+            <%})%>
+        </nav>
+    </div>
+</header>
