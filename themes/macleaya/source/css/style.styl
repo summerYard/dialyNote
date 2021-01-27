@@ -37,6 +37,11 @@ a {
   box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   //background: #d8e2eb;
   background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+
+  &:hover{
+    background: rgba(255,255,255,0.8);
+  }
 };
 
 .dotted {
@@ -48,6 +53,13 @@ a {
 .main-container {
   height 100%
   position relative
+
+  .small_left_img{
+    max-height: 230px;
+    float:left; 
+    clear: both;
+    margin-right: 30px;
+  }
 };
 
 .main {
@@ -63,15 +75,31 @@ $mainWidth = 75%;
   display flex;
   position relative;
   justify-content space-between;
+  padding-bottom: 70px;
 
   .main {
     width $mainWidth;
+  }
+
+  .main_row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .post-item {
+        margin-bottom: 20px;
+        width: 45%;
+    }
   }
 
   .aside {
     width "calc(100% - %s - 20px)" % $mainWidth;
   }
 };
+
+.toc{
+  padding-inline-start: 20px;
+}
 
 .cloud-label {
   a {
@@ -115,8 +143,9 @@ $mainWidth = 75%;
 code {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace, "Microsoft YaHei";
   padding: 2px 4px;
-  border: 1px solid #3273dc;
-  background: rgba(255,255,255,0.6);
+  //border: 1px solid #3273dc;
+  //background: rgba(255,255,255,0.6);
+  background: rgba(216,226,235,0.6);
   border-radius: 3px;
   margin-left: 2px;
   margin-right: 2px;

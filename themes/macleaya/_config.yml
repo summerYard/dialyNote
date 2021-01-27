@@ -2,27 +2,34 @@ menu:
   - name: home
     url: /
     newTab: false
-  - name: category
-    url: /category
-    newTab: true
-  - name: archive
-    url: /archive
-    newTab: true
-  - name: tag
-    url: /tags
-    newTab: true
+  #- name: code
+    #url: /categories/code
+    #newTab: true
+  #- name: life
+    #url: /categories/life
+    #newTab: true
+  #- name: read
+    #url: /categories/read
+    #newTab: true
+  #- name: archive
+    #url: /archive
+    #newTab: true
+  #- name: tag
+    #url: /tags
+    #newTab: true
   #- name: about
     #url: /about
     #newTab: false
 
 widgets:
   #- user-info
+  - toc
   - latest
-  - category
+  #- category
   - archive
   - label
 
-favicon: /images/favicon.ico
+favicon: /images/header.jpg
 
 #UserInfo
 avatar: /images/header.jpg

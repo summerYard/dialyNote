@@ -4,11 +4,11 @@ tags:
 - hexo主题
 - Icarus
 categories:
-- hexo
+- 技术
 ---
 
 
-关于Icarus主题的几个有用的网站及文章：
+# 关于Icarus主题的几个有用的网站及文章
 
 http://blog.cuzz.site/
 
@@ -23,7 +23,7 @@ https://blog.zhangruipeng.me/hexo-theme-icarus/tags/Icarus%E7%94%A8%E6%88%B7%E6%
 https://blog.zhangruipeng.me/hexo-theme-icarus/Configuration/icarus%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/
 
 
-另外安装这个主题还做了这么几个事情：
+# 安装后的修改
 
 1. `npm install` 安装主题后，将主题代码从 `node_modules` 目录下拷了出来，放到了`theme/icarus`目录中,并将项目根目录下的`_config.landscape.yml`文件也迁移到了`theme/icarus`目录,并改名为`_config.yml`
 2. 这个主题的样式用到了 `node_modules`中的 `bulma-stylus`下的文件,为了修改方便,也拷了出来,放到了`theme/bulma-stylus`目录,并修改了icarus主题代码中的引用路径
