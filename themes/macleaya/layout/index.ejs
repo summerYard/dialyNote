@@ -13,14 +13,21 @@
             </div>
 
             <div class="post-excerpt">
-                <a href="<%- url_for(page.path) %>">
-                    <p>
+                <a href="<%- url_for(page.path) %>" class="post-excerpt-a">
+
+                    <% if ( page.photos.length){ %>
+                    <section class="post-excerpt-div post-excerpt-div-left">
+                        <img src="<%- page.photos %>" class="page-photos">
+                    </section>
+                    <% } %>
+
+                    <section class="post-excerpt-div">
                         <% if (page.excerpt){ %>
                             <%- strip_html(page.excerpt) %>
                         <% } else {%>
                             <%- page.content %>
                         <% } %>
-                    </p>
+                    </section>
                 </a>
             </div>
 
