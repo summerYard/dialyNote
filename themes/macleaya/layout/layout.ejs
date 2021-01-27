@@ -4,7 +4,12 @@
     <%- partial('_partial/head') %>
 </head>
 <body>
-    <div class="main-container">
+
+    <% if( page.path != 'index.html' ) { %>
+    <div class="main-container main-padding">
+    <% }else{ %>
+    <div class="main-container main-padding main-index">
+    <% } %>      
         <%- partial('_partial/header') %>
         <section class="content global-width">
 
@@ -19,8 +24,8 @@
                 </div>
             <% } %>    
         </section>
-        <%- partial('_partial/footer') %>
     </div>
+    <%- partial('_partial/footer') %>
 
 <script>
     hljs.initHighlightingOnLoad();

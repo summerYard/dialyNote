@@ -1,5 +1,9 @@
 @import "_partial/variable.styl";
 
+html, body{
+  height: 100%;
+}
+
 body, ul {
   margin 0;
   padding 0;
@@ -37,7 +41,7 @@ a {
   box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   //background: #d8e2eb;
   background: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
+  
 
   &:hover{
     background: rgba(255,255,255,0.8);
@@ -50,9 +54,16 @@ a {
   font-size: 12px;
 };
 
+.main-index{
+  .box{
+    cursor: pointer;
+  }
+}
+
 .main-container {
-  height 100%
-  position relative
+  //height 100%
+  //position relative
+  min-height: 100%;
 
   .small_left_img{
     max-height: 230px;
@@ -60,7 +71,11 @@ a {
     clear: both;
     margin-right: 30px;
   }
-};
+}
+
+.main-padding{
+  padding-bottom: 70px;
+}
 
 .main {
   .post-item:not(:first-child) {
@@ -75,7 +90,7 @@ $mainWidth = 75%;
   display flex;
   position relative;
   justify-content space-between;
-  padding-bottom: 70px;
+  //padding-bottom: 70px;
 
   .main {
     width $mainWidth;
@@ -85,10 +100,19 @@ $mainWidth = 75%;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .post-item {
         margin-bottom: 20px;
         width: 45%;
+    }
+
+    .post-item:nth-last-child(2) {
+        margin-bottom: 0;
+    }
+
+    .post-item:nth-last-child(1) {
+        margin-bottom: 0;
     }
   }
 
@@ -210,7 +234,7 @@ code {
     }
   }
 
-  .footer {
-    margin-top: 10px;
-  }
+  //.footer {
+    //margin-top: 10px;
+  //}
 };
