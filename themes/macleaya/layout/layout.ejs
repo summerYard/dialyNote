@@ -5,24 +5,30 @@
 </head>
 <body>
 
-    <% if( page.path != 'index.html' ) { %>
-    <div class="main-container main-padding">
-    <% }else{ %>
+    <% if( is_home() ) { %>
     <div class="main-container main-padding main-index">
+    <% }else{ %>
+    <div class="main-container main-padding ">
     <% } %>      
         <%- partial('_partial/header') %>
         <section class="content global-width">
 
-            <% if( page.path != 'index.html' ) { %>
+            <% if( is_category() ) { %>
+                <div class="main">
+                    <%- partial('_partial/category') %>
+                </div>
+                <%- partial('_partial/aside') %>
+            <% }else if( is_home() ) { %>
+                <div class="main_row">
+                    <%- body %>
+                </div>
+            <% }else{ %>
                 <div class="main">
                     <%- body %>
                 </div>
                 <%- partial('_partial/aside') %>
-            <% }else{ %>
-                <div class="main_row">
-                    <%- body %>
-                </div>
             <% } %>    
+
         </section>
     </div>
     <%- partial('_partial/footer') %>

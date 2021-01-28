@@ -221,6 +221,46 @@ code {
   }
 }
 
+
+.box-categories{
+  background: #fff;
+}
+
+.box-categories-wrap{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 40px;
+  position: relative;
+  text-indent: 20px;
+
+  .fa{
+    text-indent: 0;
+  }
+
+  &:before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: #d8e2eb;
+    position: absolute;
+    left: 0;
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  .box-categories-header{
+    font-size: 18px;
+    margin-bottom: 10px;
+
+    .box-categories-header{
+      font-weight: bold;
+      margin-left: 20px;
+    }
+  }
+}
+
 @import "_partial/header.styl";
 @import "_partial/aside.styl";
 @import "_partial/article.styl";

@@ -1,0 +1,30 @@
+<div class="box box-categories">
+
+	<% page.posts.each(function(page){ %>
+	    <div class="box-categories-wrap">
+		    <div class="box-categories-header">    
+		        <span><%= date(page.date) %></span>
+		        <a href="<%- url_for(page.path) %>" class="box-categories-header-title"><%= page.title %></a>
+		    </div>
+
+		    <% if (page.tags && page.tags.length){ %>
+		        <div class="post-footer">
+		            <% if (page.tags && page.tags.length){ %>
+		                <i class="fa fa-tags"></i>
+		                <%- list_tags(page.tags, {style: 'none', show_count: false}) %>
+		            <% } %>
+		        </div>
+		    <% } %>
+	    </div>
+	<% }) %>
+</div>
+
+
+<% if (page.total > 1){ %>
+    <nav class="page-nav">
+        <%- paginator({
+            prev_text: __('prev'),
+            next_text: __('next')
+        }) %>
+    </nav>
+<% } %>
