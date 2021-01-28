@@ -44,7 +44,7 @@ a {
   
 
   &:hover{
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255, 1);
   }
 };
 
@@ -53,12 +53,6 @@ a {
   margin: 0 5px;
   font-size: 12px;
 };
-
-.main-index{
-  .box{
-    cursor: pointer;
-  }
-}
 
 .main-container {
   //height 100%
@@ -103,16 +97,16 @@ $mainWidth = 75%;
     flex-wrap: wrap;
 
     .post-item {
-        margin-bottom: 20px;
+        margin-top: 20px;
         width: 45%;
     }
 
-    .post-item:nth-last-child(2) {
-        margin-bottom: 0;
+    .post-item:nth-child(2) {
+        margin-top: 0;
     }
 
-    .post-item:nth-last-child(1) {
-        margin-bottom: 0;
+    .post-item:nth-child(1) {
+        margin-top: 0;
     }
   }
 
@@ -121,8 +115,10 @@ $mainWidth = 75%;
   }
 };
 
-.toc{
-  padding-inline-start: 20px;
+.post-toc{
+  padding-inline-start: 0px;
+  list-style-type: none;
+  line-height: 20px;
 }
 
 .cloud-label {
@@ -181,6 +177,50 @@ code {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace, "Microsoft YaHei";
 };
 
+.small-nav{
+  display: none;
+  position: relative;
+  width: 7rem;
+  text-align: right;
+
+  .small-nav-btn{
+    color: #333;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    font-size: 18px;
+    outline: none;
+  }
+
+  .small-nav-radio{
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+  }
+
+  .small-nav-radio:checked + .small-nav-box{
+      display: block;
+    }
+
+  .small-nav-box{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    background: #fff;
+    padding: 1rem;
+    z-index: 10;
+    line-height: 1.8rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+  }
+}
+
 @import "_partial/header.styl";
 @import "_partial/aside.styl";
 @import "_partial/article.styl";
@@ -238,3 +278,26 @@ code {
     //margin-top: 10px;
   //}
 };
+
+
+@media only screen and (max-width: 750px) {
+  
+  .header .global-width{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .small-nav{
+    display: block;
+  }
+
+  .nav-box{
+    display: none;
+  }
+  
+  .box{
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

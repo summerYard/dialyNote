@@ -21,5 +21,28 @@
             <% } %>
 
         </nav>
+
+        <div class="small-nav">
+
+            <label class="fa fa-bars small-nav-btn" aria-hidden="true" for="radio"></label>
+
+            <input type="checkbox" class="small-nav-radio" id="radio">
+            
+
+            <div class="small-nav-box">
+                <% theme.menu.forEach(function (item) {%>
+                    <a class="nav-item" href="<%- item.url%>"
+                    <% if (item.newTab) { %>
+                       target="_blank"
+                    <% } %>
+                    ><%= __(item.name) %></a>
+                <%})%>
+
+                <% if (site.categories.length){ %>
+                    <%- list_categories({show_count: true}) %>
+                <% } %>
+            </div>
+        </div>
+
     </div>
 </header>

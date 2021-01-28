@@ -1,6 +1,6 @@
 <% if ( is_post() && !page.no_toc){ %>
 	<div class="box widget">
 	    <div class="title"><%= __('toc') %></div>
-	    <%- toc(page.content, {list_number: false}) %>
+	    <%- toc(page.content, {class: 'post-toc',list_number: true}) %>
 	</div>
 <% } %>

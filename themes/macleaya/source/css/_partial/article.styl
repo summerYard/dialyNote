@@ -24,6 +24,10 @@
     max-height: 150px;
     overflow: hidden;
 
+    p{
+      line-height: 26px;
+    }
+
     .post-excerpt-a{
       display: flex;
       flex-direction: row;
@@ -55,6 +59,10 @@
     word-break break-all;
     overflow: hidden;
 
+    p{
+      line-height: 26px;
+    }
+
     a {
       color #0e6db1;
       text-decoration underline;
@@ -71,10 +79,21 @@
       margin 1rem 0;
       display block;
       overflow-x auto;
+      background: rgba(216,226,235,0.6);
+      border-radius: 3px;
 
       td, th {
-        border 1px solid $borderColor;
+        //border 1px solid $borderColor;
         padding .6em 1em;
+
+        pre{
+          font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace, "Microsoft YaHei";
+          line-height: 18px;
+        }
+
+        &.gutter{
+          display:none;
+        }
       }
     }
   }
