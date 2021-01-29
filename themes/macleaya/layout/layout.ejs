@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
     <%- partial('_partial/head') %>
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?bbf408f9eeb5cc4bb67b6834f77e6c0b";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
 </head>
 <body>
 
@@ -74,7 +85,7 @@
         snowcanvas.id = "snowfall";
         snowcanvas.width = window.innerWidth;
         snowcanvas.height = document.body.clientHeight;
-        snowcanvas.setAttribute("style", "position:absolute; top: 0; left: 0; z-index: 1; pointer-events: none; width: 100%;");
+        snowcanvas.setAttribute("style", "position: fixed; top: 0; left: 0; z-index: 1; pointer-events: none; width: 100%;");
         document.getElementsByTagName("body")[0].appendChild(snowcanvas);
         this.canvas = snowcanvas;
         this.ctx = snowcanvas.getContext("2d");

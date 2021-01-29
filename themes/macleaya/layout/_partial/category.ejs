@@ -1,10 +1,15 @@
 <div class="box box-categories">
 
+	<p class="box-categories-name">
+		<span class="box-categories-name-span"><%- __(url.substring( url.indexOf('categories/') + 11 , url.lastIndexOf('/'))) %></span>
+	</p>
 	<% page.posts.each(function(page){ %>
 	    <div class="box-categories-wrap">
-		    <div class="box-categories-header">    
-		        <span><%= date(page.date) %></span>
-		        <a href="<%- url_for(page.path) %>" class="box-categories-header-title"><%= page.title %></a>
+		    <div class="box-categories-header"> 
+		    	<a href="<%- url_for(page.path) %>">   
+		        	<span><%= date(page.date) %></span>
+		        	<span class="box-categories-header-title"><%= page.title %></span>
+		        </a>
 		    </div>
 
 		    <% if (page.tags && page.tags.length){ %>

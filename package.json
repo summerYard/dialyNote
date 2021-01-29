@@ -21,20 +21,20 @@
     "postPath": "source/_posts/yuque"
   },
   "dependencies": {
+    "@upupming/hexo-renderer-markdown-it-plus": "^2.0.2",
     "hexo": "^5.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
     "hexo-generator-tag": "^1.0.0",
+    "hexo-image-link": "0.0.3",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-jade": "^0.3.0",
-    "hexo-renderer-markdown-it": "^5.0.0",
     "hexo-renderer-sass": "^0.4.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
     "hexo-theme-icarus": "^4.1.1",
-    "hexo-theme-landscape": "^0.0.3",
-    "markdown-it-emoji": "^2.0.0"
+    "hexo-theme-landscape": "^0.0.3"
   },
   "devDependencies": {
     "bulma-stylus": "^0.8.0",

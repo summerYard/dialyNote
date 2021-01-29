@@ -119,6 +119,27 @@ $mainWidth = 75%;
   padding-inline-start: 0px;
   list-style-type: none;
   line-height: 20px;
+  margin-bottom: 0;
+
+  .post-toc-link{
+    word-break: break-all;
+    margin-bottom: 4px;
+    display: block;
+    margin-top: 4px;
+  }
+
+  .post-toc-child{
+    list-style-type: none;
+    line-height: 20px;
+  }
+
+  .post-toc-item{
+    &:first-child{
+      .post-toc-link{
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .cloud-label {
@@ -223,15 +244,26 @@ code {
 
 
 .box-categories{
-  background: #fff;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 0;
+  padding-bottom: 40px;
+
+  .box-categories-name{
+    font-size: 22px;
+    margin-bottom: 32px;
+    font-weight: bold;
+  }
 }
 
 .box-categories-wrap{
-  margin-left: 100px;
-  margin-right: 100px;
   margin-bottom: 40px;
   position: relative;
   text-indent: 20px;
+
+  .box-categories-header-title{
+    margin-left: 20px;
+  }
 
   .fa{
     text-indent: 0;
@@ -244,6 +276,7 @@ code {
     background: #d8e2eb;
     position: absolute;
     left: 0;
+    border-radius: 3px;
   }
 
   &:last-child{
