@@ -83,3 +83,5 @@ markdown_it_plus:
     permalinkClass: header-anchor
     permalinkSide: 'left'
     permalinkSymbol: ¶
+
+display_updated: true
