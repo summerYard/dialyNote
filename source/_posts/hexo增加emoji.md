@@ -5,6 +5,7 @@ tags:
 - emoji
 categories:
 - 技术
+updated: 2021-01-29 14:00
 ---
 
 最开始是想要引入`emoji`，在网上搜到用`hexo-renderer-markdown-it`的方法，确实好使，然后后来又在其他地方看到了其他的渲染器，貌似比`hexo-renderer-markdown-it`更好，所以更新了这篇文章
