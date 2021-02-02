@@ -3,11 +3,11 @@
 	<p class="box-categories-name">
 		<span class="box-categories-name-span"><%- __(url.substring( url.indexOf('categories/') + 11 , url.lastIndexOf('/'))) %></span>
 	</p>
-	<% page.posts.sort('updated').reverse().each(function(page){ %>
+	<% page.posts.each(function(page){ %>
 	    <div class="box-categories-wrap">
 		    <div class="box-categories-header"> 
 		    	<a href="<%- url_for(page.path) %>">   
-		        	<span><%= date(page.updated) %></span>
+		        	<span><%= date(page.date) %></span>
 		        	<span class="box-categories-header-title"><%= page.title %></span>
 		        </a>
 		    </div>
