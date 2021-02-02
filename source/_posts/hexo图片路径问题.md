@@ -5,7 +5,7 @@ tags:
 - hexo图片
 categories:
 - 技术
-updated: 2021-01-29 10:00
+updated: 2021-01-29 10:16
 ---
 
 文章名称是中文时，`md`文件引入图片后，路径经常不对导致图片出不来，网上搜了之后基本都是安装`hexo-asset-image`，但是用了之后并没有起作用，最后发现了`hexo-image-link`这个插件，终于解决了……

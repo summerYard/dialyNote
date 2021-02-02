@@ -5,9 +5,8 @@ tags:
 - Icarus
 categories:
 - 技术
-updated: 2021-01-25 17:00
+updated: 2021-01-18 16:42
 ---
-
 
 # 关于Icarus主题的几个有用的网站及文章
 
@@ -30,6 +29,3 @@ https://blog.zhangruipeng.me/hexo-theme-icarus/Configuration/icarus%E7%94%A8%E6%
 2. 这个主题的样式用到了 `node_modules`中的 `bulma-stylus`下的文件,为了修改方便,也拷了出来,放到了`theme/bulma-stylus`目录,并修改了icarus主题代码中的引用路径
 
 弄好之后,配置项修改了一部分,去掉了不想要的,将最新文章以及标签等移到了右边
-
-
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
