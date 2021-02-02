@@ -25,7 +25,7 @@ deploy:
   # deploy to github pages
   - provider: pages
     skip_cleanup: true
-    keep-history: true
+    keep-history: true #保持历史记录，如果不写的话，每次部署的文章的时间会是部署的时间，而非真正的创建时间
     target_branch: master
     github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     repo: summerYard/summerYard.github.io
