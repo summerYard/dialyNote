@@ -1,4 +1,4 @@
-<% if ( is_post() && page.content && (page.content.indexOf('<h1') != -1 || page.content.indexOf('<h2') != -1) || page.content.indexOf('<h3') != -1 || page.content.indexOf('<h4') != -1 || page.content.indexOf('<h5') != -1 || page.content.indexOf('<h6') != -1))  { %>
+<% if ( is_post() && page.content && (page.content.indexOf('<h1') != -1 || page.content.indexOf('<h2') != -1 || page.content.indexOf('<h3') != -1 || page.content.indexOf('<h4') != -1 || page.content.indexOf('<h5') != -1 || page.content.indexOf('<h6') != -1))  { %>
 	<div class="box widget">
 	    <div class="title"><%= __('toc') %></div>
 	    <%- toc(page.content, {class: 'post-toc',list_number: true}) %>
