@@ -6,11 +6,11 @@
             <span class="dotted">|</span>
         <% } %>
 
-        <i class="fa fa-calendar"></i> <time><%= full_date(page.date) %></time>
+        <i class="fa fa-calendar"></i> <time><%= full_date(page.date, 'YYYY-MM-DD h:mm') %></time>
 
-        <% if(full_date(page.date) != full_date(page.updated)) { %>
+        <% if(full_date(page.date, 'YYYY-MM-DD h:mm') != full_date(page.updated, 'YYYY-MM-DD h:mm')) { %>
             <span class="dotted">|</span>
-            <i class="fa fa-pencil"></i> <time><%= full_date(page.updated) %></time>
+            <i class="fa fa-pencil"></i> <time><%= full_date(page.updated, 'YYYY-MM-DD h:mm') %></time>
         <% } %>
 
         <% if ((page.categories && page.categories.length) || (page.tags && page.tags.length)){ %>
